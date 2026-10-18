@@ -10,8 +10,8 @@
         </style>
 	</head>
 	<body>
-        <form action="http://adresserwera" method="">
-            <h3>Formularz</h3>
+        <form action="http://adresserwera">
+            <h1>Formularz</h1>
             <label for="imie">Imię:</label><br>
             <input required type="text" id="imie" name="imie"><br>
 
@@ -27,7 +27,7 @@
             <input required type="email" id="email" name="email" placeholder="name@example.com"><br>
 
             <label for="telefon">Telefon:</label><br>
-            <select required id="kod-tel-kraju" name="kod-tel-kraju" class="kod-tel-kraju">
+            <select required id="kod-tel-kraju" name="kod-tel-kraju" size="6">
                 <option value="+48" selected>🇵🇱 PL (+48)</option>
                 <option value="+1">🇺🇸 US (+1)</option>
                 <option value="+44">🇬🇧 UK (+44)</option>
@@ -49,7 +49,7 @@
             <input type="number" id="nr-mieszkania" name="nr-mieszkania" min="0"><br>
 
             <label for="kod-pocztowy">Kod pocztowy:</label><br>
-            <input required type="number" id="kod-pocztowy" name="kod-pocztowy" pattern="[0-9]{2}-[0-9]{3}"><br>
+            <input required type="text" id="kod-pocztowy" name="kod-pocztowy" pattern="[0-9]{2}-[0-9]{3}"><br>
 
             <label for="miasto">Miasto:</label><br>
             <input required type="text" id="miasto" name="miasto"><br>
