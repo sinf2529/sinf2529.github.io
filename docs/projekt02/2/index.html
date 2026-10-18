@@ -3,8 +3,82 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Projekt 02-2</title>
+        <style>
+            body {
+                padding: 20px;
+            }
+        </style>
 	</head>
 	<body>
+        <form action="http://adresserwera" method="">
+            <h3>Formularz</h3>
+            <label for="imie">Imię:</label><br>
+            <input required type="text" id="imie" name="imie"><br>
 
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input required type="text" id="nazwisko" name="nazwisko"><br>
+
+            <label for="data-urodzenia">Data urodzenia:</label><br>
+            <input required type="date" id="data-urodzenia" name="data-urodzenia"><br>
+
+            <br>
+            
+            <label for="email">E-mail:</label><br>
+            <input required type="email" id="email" name="email" placeholder="name@example.com"><br>
+
+            <label for="telefon">Telefon:</label><br>
+            <select required id="kod-tel-kraju" name="kod-tel-kraju" class="kod-tel-kraju">
+                <option value="+48" selected>🇵🇱 PL (+48)</option>
+                <option value="+1">🇺🇸 US (+1)</option>
+                <option value="+44">🇬🇧 UK (+44)</option>
+                <option value="+49">🇩🇪 DE (+49)</option>
+                <option value="+33">🇫🇷 FR (+33)</option>
+                <option value="+380">🇺🇦 UA (+380)</option>
+            </select>
+            <input required type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" id="telefon" name="telefon" placeholder="123 456 789" title="Format: 123 456 789"><br>
+            
+            <br>
+
+            <label for="ulica">Ulica:</label><br>
+            <input required type="text" id="ulica" name="ulica"><br>
+            
+            <label for="nr-budynku">Numer budynku:</label><br>
+            <input required type="number" id="nr-budynku" name="nr-budynku" min="0"><br>
+
+            <label for="nr-mieszkania">Numer mieszkania:</label><br>
+            <input type="number" id="nr-mieszkania" name="nr-mieszkania" min="0"><br>
+
+            <label for="kod-pocztowy">Kod pocztowy:</label><br>
+            <input required type="number" id="kod-pocztowy" name="kod-pocztowy" pattern="[0-9]{2}-[0-9]{3}"><br>
+
+            <label for="miasto">Miasto:</label><br>
+            <input required type="text" id="miasto" name="miasto"><br>
+
+            <label for="wojewodztwo">Województwo:</label><br>
+            <select required id="wojewodztwo" name="wojewodztwo">
+                <option value="" selected disabled>- województwo -</option> 
+                <option value="mazowieckie">mazowieckie</option>
+                <option value="lodzkie">łódzkie</option>
+                <option value="malopolskie">małopolskie</option>
+                <option value="pomorskie">pomorskie</option>
+            </select><br>
+
+            <br>
+
+            <label for="prawojazdy">Prawo jazdy:</label>
+            <input type="checkbox" id="prawojazdy" name="prawojazdy"><br>
+
+            <br>
+
+            <label for="haslo">Hasło:</label><br>
+            <input required type="password" id="haslo" name="haslo"><br>
+
+            <br>
+
+            <label for="uwagi">Uwagi:</label><br>
+            <textarea id="uwagi" name="uwagi" rows="5" cols="50" maxlength="1000"></textarea><br>
+
+            <input type="submit" value="OK">
+        </form>
 	</body>
-</html
+</html>
