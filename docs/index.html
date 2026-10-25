@@ -9,8 +9,9 @@
 			}
 			.content {
 				background-color: white;
-				height: 1000px;
-				width: 50%;
+				height: 100vh;
+				box-sizing: border-box;
+				max-width: 100vh;
 				margin: 0 auto;
 				padding: 10px;
 				font-size: 200%
@@ -19,13 +20,41 @@
 	</head>
 	<body>
 	<div class="content">
-		<h3 style="display: flex; justify-content: center; align-items: center;">Hubert Morawski</h3>
-		<p style="display: flex; justify-content: center; align-items: center;">Projekty na przedmiot Budowa serwisów internetowych</p>
+		<h3 style="display: flex; justify-content: center; align-items: center;">
+			Hubert Morawski
+		</h3>
+		<p style="display: flex; justify-content: center; align-items: center;">
+			Projekty na przedmiot Budowa serwisów internetowych
+		</p>
 		<p>
 		<ul>
 			<li><a href="/projekt01">Projekt 1 - imię i nazwisko</a></li>
-			<li><a href="/projekt02/1">Projekt 2.1 - kolumny </a></li>
-			<li><a href="/projekt02/2">Projekt 2.2 - formularz</a></li>
+			<li>
+				Projekt 2
+				<ul>
+					<li><a href="/projekt02/1">Projekt 2.1 - kolumny </a></li>
+					<li><a href="/projekt02/2">Projekt 2.2 - formularz</a></li>
+				</ul>
+			</li>
+			<li>
+				Projekt 3
+				<ul>
+					<li><a href="/projekt03/1">Projekt 3.1 - formularz</a></li>
+					<li><a href="/projekt03/2">Projekt 3.2 - kolumny</a></li>
+					<li><a href="/projekt03/3">Projekt 3.3 - kolumny</a></li>
+					<li>
+						Wersje zrobione w AI:
+						<ul>
+							<li><a href="/projekt03ai/1">Projekt 3.1 - formularz</a></li>
+							<li><a href="/projekt03ai/2">Projekt 3.2 - kolumny</a></li>
+							<li><a href="/projekt03ai/3">Projekt 3.3 - kolumny</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Projekt 4
+			</li>
 		</ul>
 		</p>
 	</div>
