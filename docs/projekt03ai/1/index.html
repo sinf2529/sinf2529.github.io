@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz danych osobowych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Formularz danych osobowych</h1>
+            <p>Wypełnij poniższe pola, aby przesłać swoje dane.</p>
+        </header>
+
+        <form action="#" method="post">
+
+            <h2>Dane osobowe</h2>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="imie">Imię</label>
+                    <input type="text" id="imie" name="imie"
+                           placeholder="Wpisz imię" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nazwisko">Nazwisko</label>
+                    <input type="text" id="nazwisko" name="nazwisko"
+                           placeholder="Wpisz nazwisko" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data urodzenia</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="np. imie@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefon">Numer telefonu</label>
+                    <input type="tel" id="telefon" name="telefon"
+                           placeholder="np. 123456789">
+                </div>
+
+                <div class="form-group">
+                    <label for="haslo">Hasło</label>
+                    <input type="password" id="haslo" name="haslo"
+                           placeholder="Wpisz hasło" required>
+                </div>
+            </div>
+
+            <h2>Adres zamieszkania</h2>
+
+            <div class="form-grid">
+                <div class="form-group full-width">
+                    <label for="ulica">Ulica</label>
+                    <input type="text" id="ulica" name="ulica"
+                           placeholder="Nazwa ulicy">
+                </div>
+
+                <div class="form-group">
+                    <label for="dom">Numer domu</label>
+                    <input type="text" id="dom" name="dom"
+                           placeholder="Np. 12A">
+                </div>
+
+                <div class="form-group">
+                    <label for="mieszkanie">Numer mieszkania</label>
+                    <input type="text" id="mieszkanie" name="mieszkanie"
+                           placeholder="Np. 5">
+                </div>
+
+                <div class="form-group">
+                    <label for="kod">Kod pocztowy</label>
+                    <input type="text" id="kod" name="kod"
+                           placeholder="00-000"
+                           pattern="[0-9]{2}-[0-9]{3}">
+                </div>
+
+                <div class="form-group">
+                    <label for="miasto">Miasto</label>
+                    <input type="text" id="miasto" name="miasto"
+                           placeholder="Nazwa miasta">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="wojewodztwo">Województwo</label>
+                    <select id="wojewodztwo" name="wojewodztwo">
+                        <option value="">Wybierz województwo</option>
+                        <option>Dolnośląskie</option>
+                        <option>Kujawsko-pomorskie</option>
+                        <option>Lubelskie</option>
+                        <option>Lubuskie</option>
+                        <option>Łódzkie</option>
+                        <option>Małopolskie</option>
+                        <option>Mazowieckie</option>
+                        <option>Opolskie</option>
+                        <option>Podkarpackie</option>
+                        <option>Podlaskie</option>
+                        <option>Pomorskie</option>
+                        <option>Śląskie</option>
+                        <option>Świętokrzyskie</option>
+                        <option>Warmińsko-mazurskie</option>
+                        <option>Wielkopolskie</option>
+                        <option>Zachodniopomorskie</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2>Dodatkowe informacje</h2>
+
+            <div class="form-group">
+                <label for="prawo-jazdy">Czy posiadasz prawo jazdy?</label>
+                <select id="prawo-jazdy" name="prawo-jazdy">
+                    <option value="">Wybierz odpowiedź</option>
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="uwagi">Uwagi</label>
+                <textarea id="uwagi" name="uwagi" rows="5"
+                          placeholder="Wpisz dodatkowe informacje..."></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="reset" class="reset-button">Wyczyść formularz</button>
+                <button type="submit" class="submit-button">Prześlij formularz</button>
+            </div>
+
+        </form>
+
+        <footer>
+            <p>Formularz danych osobowych</p>
+        </footer>
+    </main>
+
+</body>
+</html>

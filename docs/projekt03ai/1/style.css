@@ -1,0 +1,183 @@
+
+/* Ustawienia całej strony */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f9;
+    color: #263449;
+}
+
+/* Główny kontener formularza */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Nagłówek strony */
+header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e6ee;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #17365d;
+    font-size: 28px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #66758a;
+    line-height: 1.5;
+}
+
+/* Nagłówki sekcji */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8edf5;
+    color: #24558a;
+    font-size: 19px;
+}
+
+/* Układ pól w dwóch kolumnach */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Pojedyncze pole formularza */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #34445b;
+}
+
+/* Pola tekstowe, listy i pole uwag */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e2;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #263449;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Wygląd pola po kliknięciu */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3478c7;
+    box-shadow: 0 0 0 3px rgba(52, 120, 199, 0.12);
+}
+
+/* Przyciski formularza */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #e9edf3;
+    color: #34445b;
+}
+
+.submit-button {
+    background-color: #245fa6;
+    color: white;
+}
+
+/* Zmiana koloru po najechaniu myszką */
+.reset-button:hover {
+    background-color: #d8e0eb;
+}
+
+.submit-button:hover {
+    background-color: #194a85;
+}
+
+/* Stopka */
+footer {
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #e1e6ee;
+    color: #8490a0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Dostosowanie do telefonów */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 22px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .buttons {
+        flex-direction: column-reverse;
+    }
+
+    button {
+        width: 100%;
+    }
+}
