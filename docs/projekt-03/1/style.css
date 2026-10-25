@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #dadada;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.page-wrapper {
+    background-color: white;
+    color:black;
+    max-width: 100vh  ;
+    margin: auto;
+    
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    padding: 50px;
+    padding-top: 10px;
+}
+table {
+    margin: 0 auto;
+}
+thead {
+    text-align: center;
+}
+td {
+    padding: 5px
+}
+input, select, textarea {
+    font-family: inherit;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #dadada;
+    border-style: solid;
+    border-width: 1px;
+}
+input:focus, select:focus, textarea:focus {
+    outline-style: solid;
+    outline-color: skyblue;
+}

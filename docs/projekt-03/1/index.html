@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projekt 03-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page-wrapper"><form action="http://adresserwera"><table>
+    
+<colgroup>
+    <col style="width: 200px;">
+    <col>
+</colgroup>
+
+<thead>
+    <tr>
+        <th colspan="2"><h1>Formularz</h1></th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td><label id="imie-nazwisko">Imię i nazwisko*:</label></td>
+        <td>
+            <input required aria-labelledby="imie-nazwisko" type="text" id="imie" name="imie" placeholder="Imię"> -
+            <input required aria-labelledby="imie-nazwisko" type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko">
+        </td>
+    </tr>
+    <tr>
+        <td><label for="data-urodzenia">Data urodzenia*:</label></td>
+        <td><input required type="date" id="data-urodzenia" name="data-urodzenia"></td>
+    </tr>
+    <tr>
+        <td><label for="email">E-mail*:</label></td>
+        <td><input required type="email" id="email" name="email" placeholder="name@example.com"></td>
+    </tr>
+    <tr>
+        <td><label for="telefon">Telefon*:</label></td>
+        <td>
+            <select required id="kod-tel-kraju" name="kod-tel-kraju">
+                <option value="" selected disabled> -- </option>
+                <option value="+48">🇵🇱 PL (+48)</option>
+                <option value="+1">🇺🇸 US (+1)</option>
+                <option value="+44">🇬🇧 UK (+44)</option>
+                <option value="+49">🇩🇪 DE (+49)</option>
+                <option value="+33">🇫🇷 FR (+33)</option>
+                <option value="+380">🇺🇦 UA (+380)</option>
+            </select> -
+            <input required type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" id="telefon" name="telefon" placeholder="123 456 789" title="Format: 123 456 789">
+        </td>
+    </tr>
+    <tr>
+        <td><label for="ulica">Ulica*:</label></td>
+        <td> <input required type="text" id="ulica" name="ulica"></td>
+    </tr>
+    <tr>
+        <td><label id="nr-domu-lokalu">Nr domu*/lokalu:</label></td>
+        <td>
+            <input required aria-labelledby="nr-domu-lokalu" type="number" id="nr-budynku" name="nr-budynku" min="0">
+            / <input type="number" id="nr-mieszkania" name="nr-mieszkania" min="0">
+        </td>
+    </tr>
+    <tr>
+        <td><label for="kod-pocztowy">Kod pocztowy*:</label></td>
+        <td><input required type="text" id="kod-pocztowy" name="kod-pocztowy" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000"></td>
+    </tr>
+    <tr>
+        <td><label for="miasto">Miasto*:</label></td>
+        <td><input required type="text" id="miasto" name="miasto"></td>
+    </tr>
+    <tr>
+        <td><label for="wojewodztwo">Województwo*:</label></td>
+        <td>
+            <select required id="wojewodztwo" name="wojewodztwo">
+            <option value="" selected disabled>- województwo -</option> 
+            <option value="mazowieckie">mazowieckie</option>
+            <option value="lodzkie">łódzkie</option>
+            <option value="malopolskie">małopolskie</option>
+            <option value="pomorskie">pomorskie</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="prawojazdy">Prawo jazdy:</label></td>
+        <td><input type="checkbox" id="prawojazdy" name="prawojazdy"></td>
+    </tr>
+    <tr>
+        <td><label for="haslo">Hasło*:</label></td>
+        <td><input required type="password" id="haslo" name="haslo"></td>
+    </tr>
+    <tr>
+        <td><label for="uwagi">Uwagi:</label></td>
+        <td><textarea id="uwagi" name="uwagi" rows="5" cols="50" maxlength="1000"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: right;">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Prześlij">
+        </td>
+    </tr>
+</tbody>
+
+</table></form></div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+body {
+    margin: 2vh;
+}
+.container .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.container .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap ;
+    padding: 0;
+    padding-bottom: 5px;
+}
+.container p {
+    margin:0px;
+    height: auto;
+    flex: 1 0;
+    padding-right: 20px;
+}
