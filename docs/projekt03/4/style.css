@@ -15,9 +15,12 @@ body {
     padding: 0;
 }
 .container p,img {
-    margin: 20px;
+    margin: 0px;
     height: auto;
     flex: 1 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.container .element {
+    margin: 20px;
 }
