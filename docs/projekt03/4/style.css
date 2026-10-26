@@ -12,7 +12,7 @@ body {
     flex-wrap: nowrap ;
     padding: 0;
 }
-.container p {
+.container p,img {
     margin:0px;
     height: auto;
     flex: 1 0;
