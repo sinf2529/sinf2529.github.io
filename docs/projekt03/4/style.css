@@ -15,7 +15,7 @@ body {
     padding: 0;
 }
 .container p,img {
-    margin:0px;
+    margin: 20px;
     height: auto;
     flex: 1 0;
     padding-left: 10px;
