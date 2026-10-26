@@ -5,11 +5,13 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: space-around;
 }
 .container .row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap ;
+    justify-content: space-around;
     padding: 0;
 }
 .container p,img {
