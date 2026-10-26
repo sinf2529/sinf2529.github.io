@@ -1,1 +1,21 @@
-
+body {
+    margin: 2vh;
+}
+.container .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.container .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap ;
+    padding: 0;
+}
+.container p {
+    margin:0px;
+    height: auto;
+    flex: 1 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
