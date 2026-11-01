@@ -1,0 +1,26 @@
+body {
+    margin: 2vh;
+}
+.container .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.container .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap ;
+    justify-content: space-around;
+    padding: 0;
+}
+.container p,img {
+    margin: 0px;
+    height: auto;
+    flex: 1 0;
+    padding: 10px;
+    text-align: center;
+}
+.container .element {
+    margin: 20px;
+}
