@@ -62,7 +62,7 @@ function handleInput(input){
         current+=input
 
     // minus jako pierwszy
-    } else if (input=="-" && nothing_in_memory) {
+    } else if (input=="-" && nothing_in_memory()) {
         ondisplay.push("0")
         ondisplay.push("-")
 
