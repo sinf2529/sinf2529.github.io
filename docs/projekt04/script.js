@@ -46,6 +46,11 @@ function renderDisplay(text=""){
     }
 }
 
+// TODO:
+// - rozbijanie liczb ujemnych w wyniku
+// - 0.1+0.2==0.3000000
+// - na githubie nie dziala
+
 // Input
 function handleInput(input){
     let last = ondisplay[ondisplay.length-1] ?? ''
